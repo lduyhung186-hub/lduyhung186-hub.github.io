@@ -1,0 +1,58 @@
+name: Restore and deploy website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".upload-parts/**"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  restore-and-deploy:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out package
+        uses: actions/checkout@v4
+
+      - name: Restore complete website
+        shell: bash
+        run: |
+          cat .upload-parts/site.zip.part-* > site.zip
+          unzip -q -o site.zip
+          rm -rf .upload-parts
+          rm -f site.zip .github/workflows/bootstrap-site.yml
+
+      - name: Save restored website
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish Tea Narrative Qinghe website"
+          git push
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
