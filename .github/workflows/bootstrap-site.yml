@@ -31,7 +31,18 @@ jobs:
         shell: bash
         run: |
           cat .upload-parts/site.zip.part-* > site.zip
-          unzip -q -o site.zip
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          with ZipFile("site.zip") as archive:
+              for item in archive.infolist():
+                  name = item.filename.replace("\\", "/")
+                  if not name or name.endswith("/"):
+                      continue
+                  target = Path(name)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(archive.read(item))
+          PY
           rm -rf .upload-parts
           rm -f site.zip .github/workflows/bootstrap-site.yml
 
