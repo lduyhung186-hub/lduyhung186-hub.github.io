@@ -1,16 +1,128 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1f5d3a">
-  <title>茶叙青禾 · 正在加载</title>
-  <script>window.__TEA_SITE_ENTRY__="team.html";</script>
-  <script defer src="site-loader.js?v=3"></script>
-</head>
-<body style="margin:0;background:#f7f7f0;color:#214229;font-family:system-ui,-apple-system,'Microsoft YaHei',sans-serif">
-  <main style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem">
-    <div><p style="letter-spacing:.16em;font-size:.78rem;margin:0 0 .8rem">YANTAI UNIVERSITY</p><h1 style="font-size:clamp(2rem,6vw,4.6rem);margin:0">茶叙青禾</h1><p style="color:#5d6b5e">正在进入海青茶乡实践故事…</p></div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="烟台大学茶叙青禾社会实践队成员介绍：11位成员的专业背景、项目分工与实践职责。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b5b38'/%3E%3Cpath d='M19 38c13 1 23-8 27-22 4 15-2 29-18 31-5 1-9-3-9-9Z' fill='%23f3f6eb'/%3E%3C/svg%3E" />
+    <title>团队成员｜烟台大学 · 茶叙青禾</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="inner-page team-page">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="index.html" aria-label="返回首页">
+        <span class="wordmark-mark">茶</span>
+        <span><b>茶叙青禾</b><small>YANTAI UNIVERSITY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>菜单</span><i aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="index.html">首页</a>
+        <a href="practice.html">实践纪实</a>
+        <a href="tea-factories.html">三站茶乡</a>
+        <a href="team.html" aria-current="page">团队成员</a>
+        <a class="nav-contact" href="design.html">视觉成果</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero team-page-hero" aria-labelledby="page-title">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">MEET THE FIELD TEAM · 11 MEMBERS</p>
+          <h1 id="page-title">不同的专业，<br />共同走进同一片茶园。</h1>
+          <p>团队由投资学、建筑学与会计学学生组成。点击成员姓名，可切换查看每个人在本次社会实践中的具体分工。</p>
+        </div>
+        <figure class="page-hero-media reveal">
+          <img src="assets/images/field/team-hero.jpg" alt="茶叙青禾社会实践队在海青品茗园牌坊下合影" />
+          <figcaption>茶叙青禾社会实践队 / 海青镇实践现场</figcaption>
+        </figure>
+      </section>
+
+      <section class="member-switcher" data-switcher data-default-panel="member-01" aria-labelledby="member-directory-title">
+        <header class="switcher-heading reveal">
+          <div><p class="eyebrow">TEAM DIRECTORY</p><h2 id="member-directory-title">选择一位成员，<br />查看项目分工。</h2></div>
+          <p>这里不再把11个人全部纵向堆叠。成员目录用于选择，详情区只显示当前选中的具体介绍。</p>
+        </header>
+
+        <div class="member-switcher-layout reveal">
+          <div class="member-tabs" role="tablist" aria-label="团队成员列表">
+            <button type="button" role="tab" aria-selected="true" aria-controls="member-01" data-switch-target="member-01"><span>01</span><img src="assets/images/members/member-01.jpg" alt="" /><b>许小慧</b><small>统筹官</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-02" data-switch-target="member-02"><span>02</span><img src="assets/images/members/member-02.jpg" alt="" /><b>池岸青</b><small>策划员</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-03" data-switch-target="member-03"><span>03</span><img src="assets/images/members/member-03.jpg" alt="" /><b>沈鸣盛</b><small>团貌设计师</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-04" data-switch-target="member-04"><span>04</span><img src="assets/images/members/member-04.jpg" alt="" /><b>杨百合</b><small>茶韵宣传官</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-05" data-switch-target="member-05"><span>05</span><img src="assets/images/members/member-05.jpg" alt="" /><b>任文静</b><small>推文运营官</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-06" data-switch-target="member-06"><span>06</span><img src="assets/images/members/member-06.jpg" alt="" /><b>王玉淼</b><small>茶趣流量师</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-07" data-switch-target="member-07"><span>07</span><img src="assets/images/members/member-07.jpg" alt="" /><b>蒋安琪</b><small>茶园记录官</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-08" data-switch-target="member-08"><span>08</span><img src="assets/images/members/member-08.jpg" alt="" /><b>张健锋</b><small>文创筑造者</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-09" data-switch-target="member-09"><span>09</span><img src="assets/images/members/member-09.jpg" alt="" /><b>胡振楠</b><small>茶韵创意师</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-10" data-switch-target="member-10"><span>10</span><img src="assets/images/members/member-10.jpg" alt="" /><b>王廷玉</b><small>茶事PPT匠人</small></button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="member-11" data-switch-target="member-11"><span>11</span><img src="assets/images/members/member-11.jpg" alt="" /><b>吕树通</b><small>茶情调研师</small></button>
+          </div>
+
+          <div class="member-panels">
+            <article class="member-panel is-active" id="member-01" role="tabpanel" data-switch-panel>
+              <img class="member-portrait" src="assets/images/members/member-01.jpg" alt="队长许小慧" />
+              <div class="member-profile"><span>01 / LEAD COORDINATOR</span><p class="member-major">投资学 · 统筹官</p><h3>许小慧</h3><p>作为团队统筹者，许小慧负责把实践目标拆解为可以执行的任务，并协调调研、宣传、设计与资料整理等不同环节。</p><p>在对外工作中，主要承担茶企沟通与行程衔接；在团队内部，则持续跟进分工、进度和成果汇总，保证各条工作线围绕同一实践主题推进。</p><ul><li>实践计划与任务统筹</li><li>茶企、实践点沟通衔接</li><li>团队分工与成果汇总</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-02" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-02.jpg" alt="队员池岸青" />
+              <div class="member-profile"><span>02 / PROJECT PLANNING</span><p class="member-major">投资学 · 策划员</p><h3>池岸青</h3><p>池岸青承担实践策划案的撰写与结构梳理，把团队关于海青茶调研、文化传播和助农实践的想法整理为清晰方案。</p><p>这项工作连接前期准备与现场行动：既要明确阶段目标，也要考虑人员安排、活动形式与最终成果，使每次走访都有可追踪的重点。</p><ul><li>实践策划案撰写</li><li>活动流程与重点梳理</li><li>阶段任务辅助协调</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-03" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-03.jpg" alt="队员沈鸣盛" />
+              <div class="member-profile"><span>03 / TEAM IDENTITY</span><p class="member-major">建筑学 · 团貌设计师</p><h3>沈鸣盛</h3><p>沈鸣盛负责团队视觉识别的主要设计工作，将茶园、青年行动与烟台大学团队身份转化为统一的图形语言。</p><p>队旗、队服与文创物料既服务现场使用，也让实践队在拍摄、活动和对外传播中保持清晰一致的形象。</p><ul><li>队旗视觉设计</li><li>队服正反面设计</li><li>文创与现场物料延展</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-04" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-04.jpg" alt="队员杨百合" />
+              <div class="member-profile"><span>04 / CONTENT COMMUNICATION</span><p class="member-major">投资学 · 茶韵宣传官</p><h3>杨百合</h3><p>杨百合参与公众号内容运营与文章策划，负责把现场走访、访谈信息和团队感悟整理成适合公众阅读的传播内容。</p><p>工作重点是从大量记录中提炼主题，让实践文章既保留真实细节，也能清楚说明海青茶的文化与产业价值。</p><ul><li>公众号选题与内容策划</li><li>实践文稿撰写整理</li><li>茶乡故事传播表达</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-05" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-05.jpg" alt="队员任文静" />
+              <div class="member-profile"><span>05 / ARTICLE OPERATION</span><p class="member-major">投资学 · 推文运营官</p><h3>任文静</h3><p>任文静参与公众号运营、推文策划与资料组织，将不同阶段的实践内容转化为连贯的文章结构。</p><p>从现场信息筛选到文字编排，这项工作帮助团队建立持续的内容记录，也为网站中的实践纪实提供了重要底稿。</p><ul><li>公众号日常运营</li><li>推文结构与内容策划</li><li>图文资料筛选整理</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-06" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-06.jpg" alt="队员王玉淼" />
+              <div class="member-profile"><span>06 / PLATFORM OPERATION</span><p class="member-major">投资学 · 茶趣流量师</p><h3>王玉淼</h3><p>王玉淼负责平台运营相关工作，思考如何把实践现场与海青茶内容转化为更适合线上传播的素材。</p><p>其分工关注内容发布、受众触达与传播节奏，让团队产出的文章、影像和视觉成果能够进入更广泛的公众视野。</p><ul><li>线上平台运营</li><li>传播素材适配</li><li>内容发布节奏协同</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-07" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-07.jpg" alt="队员蒋安琪" />
+              <div class="member-profile"><span>07 / FIELD DOCUMENTATION</span><p class="member-major">投资学 · 茶园记录官</p><h3>蒋安琪</h3><p>蒋安琪承担实践过程中的拍摄与剪辑，用影像记录茶园环境、制茶过程、企业交流和团队行动。</p><p>这些照片与视频不仅是活动留痕，也是后续推文、网站和视觉成果的基础素材，让叙述始终有真实现场作为支撑。</p><ul><li>现场摄影与视频记录</li><li>实践影像筛选</li><li>视频剪辑与素材归档</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-08" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-08.jpg" alt="队员张健锋" />
+              <div class="member-profile"><span>08 / CREATIVE MAKING</span><p class="member-major">建筑学 · 文创筑造者</p><h3>张健锋</h3><p>张健锋参与团队的设计与策划工作，将调研中获得的茶文化信息转化为具有具体使用场景的文创表达。</p><p>其工作连接内容与形式：一方面理解实践主题，另一方面关注图形、版式和物料在真实活动中的呈现效果。</p><ul><li>文创设计参与</li><li>视觉方案策划</li><li>线下物料应用协作</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-09" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-09.jpg" alt="队员胡振楠" />
+              <div class="member-profile"><span>09 / VISUAL CONCEPT</span><p class="member-major">建筑学 · 茶韵创意师</p><h3>胡振楠</h3><p>胡振楠参与视觉创意与文稿整理，在图像表达和文字内容之间建立衔接。</p><p>通过梳理主题、辅助设计与整理材料，使茶文化内容能够更准确地进入海报、文创和展示页面，而不是停留在零散素材中。</p><ul><li>视觉创意与设计协作</li><li>主题内容梳理</li><li>文稿资料整理</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-10" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-10.jpg" alt="队员王廷玉" />
+              <div class="member-profile"><span>10 / PRESENTATION DESIGN</span><p class="member-major">会计学 · 茶事PPT匠人</p><h3>王廷玉</h3><p>王廷玉负责团队汇报材料的制作与视觉美化，把调研过程、实践成果和核心数据整理成便于展示的演示文稿。</p><p>这项工作需要在信息完整与版面清晰之间取得平衡，让老师、评委与公众能够快速理解项目逻辑。</p><ul><li>汇报PPT制作</li><li>信息层级整理</li><li>版式与视觉统一</li></ul></div>
+            </article>
+            <article class="member-panel" id="member-11" role="tabpanel" data-switch-panel hidden>
+              <img class="member-portrait" src="assets/images/members/member-11.jpg" alt="队员吕树通" />
+              <div class="member-profile"><span>11 / RESEARCH SUPPORT</span><p class="member-major">会计学 · 茶情调研师</p><h3>吕树通</h3><p>吕树通承担问卷设计与实践报告相关工作，帮助团队把观察和访谈转化为更有结构的调研信息。</p><p>通过整理问题、汇总反馈并参与报告撰写，使团队对海青茶受众认知、产业现状和传播需求的判断更有依据。</p><ul><li>调研问卷设计</li><li>反馈信息整理</li><li>实践报告撰写协作</li></ul></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-field-strip" aria-label="团队实践照片">
+        <figure class="reveal"><img src="assets/images/field/team-signs.jpg" alt="队员在茶园持手举牌合影" /><figcaption>传播物料进入真实场景</figcaption></figure>
+        <figure class="reveal"><img src="assets/images/field/slogan-collage-a.jpg" alt="队员在茶园完成主题口号影像" /><figcaption>茶赴山海 · 海青茗香</figcaption></figure>
+        <figure class="reveal"><img src="assets/images/field/slogan-collage-b.jpg" alt="队员在茶园完成乡村振兴主题影像" /><figcaption>乡野寻香 · 一叶兴农</figcaption></figure>
+      </section>
+
+      <section class="next-page-cta">
+        <p class="eyebrow">FOLLOW THE ACTION</p>
+        <h2>认识团队之后，<br />继续阅读我们的实践路线。</h2>
+        <a class="button button-primary" href="practice.html">进入实践纪实 →</a>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 烟台大学 · 茶叙青禾社会实践队</span><a href="index.html">返回首页 →</a></footer>
+  </body>
 </html>

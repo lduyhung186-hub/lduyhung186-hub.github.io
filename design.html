@@ -1,16 +1,108 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1f5d3a">
-  <title>茶叙青禾 · 正在加载</title>
-  <script>window.__TEA_SITE_ENTRY__="design.html";</script>
-  <script defer src="site-loader.js?v=3"></script>
-</head>
-<body style="margin:0;background:#f7f7f0;color:#214229;font-family:system-ui,-apple-system,'Microsoft YaHei',sans-serif">
-  <main style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem">
-    <div><p style="letter-spacing:.16em;font-size:.78rem;margin:0 0 .8rem">YANTAI UNIVERSITY</p><h1 style="font-size:clamp(2rem,6vw,4.6rem);margin:0">茶叙青禾</h1><p style="color:#5d6b5e">正在进入海青茶乡实践故事…</p></div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="茶叙青禾视觉成果档案：海青茶IP、团队识别、团扇手举牌与实践现场应用。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b5b38'/%3E%3Cpath d='M19 38c13 1 23-8 27-22 4 15-2 29-18 31-5 1-9-3-9-9Z' fill='%23f3f6eb'/%3E%3C/svg%3E" />
+    <title>视觉成果｜烟台大学 · 茶叙青禾</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="inner-page design-page">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="index.html" aria-label="返回首页">
+        <span class="wordmark-mark">茶</span>
+        <span><b>茶叙青禾</b><small>YANTAI UNIVERSITY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>菜单</span><i aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="index.html">首页</a>
+        <a href="practice.html">实践纪实</a>
+        <a href="tea-factories.html">三站茶乡</a>
+        <a href="team.html">团队成员</a>
+        <a class="nav-contact" href="design.html" aria-current="page">视觉成果</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero design-page-hero" aria-labelledby="page-title">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">VISUAL ARCHIVE · HAIQING TEA</p>
+          <h1 id="page-title">把调研内容，<br />转化为可见、可用的表达。</h1>
+          <p>这里按四类成果组织，不再全部堆在首页。点击分类即可切换查看IP、团队识别、文创物料和现场应用。</p>
+        </div>
+        <figure class="page-hero-media reveal">
+          <img src="assets/images/ip-hero.jpg" alt="海青茶韵IP形象视觉海报" />
+          <figcaption>海青茶韵 / 2026 VISUAL OPERATION PORTFOLIO</figcaption>
+        </figure>
+      </section>
+
+      <section class="design-switcher" data-switcher data-default-panel="design-ip" aria-labelledby="design-directory-title">
+        <header class="switcher-heading reveal">
+          <div><p class="eyebrow">SELECT A CATEGORY</p><h2 id="design-directory-title">四组成果，<br />一次只看一类。</h2></div>
+          <p>保留原始作品本身，不重新改动队旗、队服、团扇和手举牌设计；网页只负责更清楚地分类与展示。</p>
+        </header>
+
+        <div class="design-tabs reveal" role="tablist" aria-label="视觉成果分类">
+          <button type="button" role="tab" aria-selected="true" aria-controls="design-ip" data-switch-target="design-ip"><span>01</span><b>IP形象</b><small>角色与视觉系统</small></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="design-identity" data-switch-target="design-identity"><span>02</span><b>团队识别</b><small>队旗与队服</small></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="design-merch" data-switch-target="design-merch"><span>03</span><b>文创物料</b><small>团扇与手举牌</small></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="design-field" data-switch-target="design-field"><span>04</span><b>现场应用</b><small>物料进入茶园</small></button>
+        </div>
+
+        <div class="design-panels reveal">
+          <article class="design-panel is-active" id="design-ip" role="tabpanel" data-switch-panel>
+            <header><span>01 / BRAND CHARACTER</span><h3>海青茶韵IP形象</h3><p>以嫩芽、茶叶和清新的绿色为核心视觉，让抽象的茶文化拥有更亲近、更年轻的角色表达。</p></header>
+            <div class="design-gallery design-gallery-ip">
+              <figure class="design-gallery-feature"><img src="assets/images/ip-character.jpg" alt="海青茶韵IP角色设定与动作系统" /><figcaption>角色设定与动作系统</figcaption></figure>
+              <figure><img src="assets/images/ip-skins.jpg" alt="海青茶韵IP主题皮肤" /><figcaption>主题皮肤与场景延展</figcaption></figure>
+              <figure><img src="assets/images/ip-merch.jpg" alt="海青茶韵IP周边设计" /><figcaption>IP周边视觉延展</figcaption></figure>
+              <figure><img src="assets/images/ip-mobile.jpg" alt="海青茶韵移动端界面" /><figcaption>数字传播界面</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="design-panel" id="design-identity" role="tabpanel" data-switch-panel hidden>
+            <header><span>02 / TEAM IDENTITY</span><h3>统一的团队现场形象</h3><p>队旗与队服共同形成清晰的团队识别，让每一次走访、拍摄和活动都能被准确辨认。</p></header>
+            <div class="design-gallery design-gallery-identity">
+              <figure><img src="assets/images/team-flag.png" alt="烟台大学茶叙青禾社会实践队队旗" /><figcaption>队旗 / 保留原设计</figcaption></figure>
+              <figure><img src="assets/images/team-shirt.jpg" alt="茶叙青禾社会实践队队服正反面" /><figcaption>队服 / 正反面设计</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="design-panel" id="design-merch" role="tabpanel" data-switch-panel hidden>
+            <header><span>03 / CAMPAIGN MATERIALS</span><h3>可以被带到现场的茶乡故事</h3><p>团扇承担知识传播，手举牌强化现场互动。原设计中的二维码仅作为作品画面保留，不作为本网站的跳转入口。</p></header>
+            <div class="design-gallery design-gallery-fans">
+              <figure><img src="assets/images/fan-route.png" alt="茶叙青禾实践路线主题团扇正反面" /><figcaption>团扇 / 实践路线</figcaption></figure>
+              <figure><img src="assets/images/fan-story.png" alt="认识海青茶主题团扇正反面" /><figcaption>团扇 / 海青茶知识</figcaption></figure>
+            </div>
+            <div class="design-signs" aria-label="手举牌作品">
+              <figure><img src="assets/images/sign-coast.png" alt="面海向阳，岛城名茶手举牌" /></figure>
+              <figure><img src="assets/images/sign-breeze.png" alt="海风有信，茶香正浓手举牌" /></figure>
+              <figure><img src="assets/images/sign-garden.png" alt="我在海青茶园等你手举牌" /></figure>
+            </div>
+          </article>
+
+          <article class="design-panel" id="design-field" role="tabpanel" data-switch-panel hidden>
+            <header><span>04 / IN THE FIELD</span><h3>设计进入真实的茶园</h3><p>物料不只停留在效果图中。队服、队旗和手举牌被带入海青茶园，参与现场记录与公众传播。</p></header>
+            <div class="design-gallery design-gallery-field">
+              <figure class="design-gallery-wide"><img src="assets/images/field/team-signs.jpg" alt="实践队在茶园使用手举牌拍摄" /><figcaption>手举牌与队服的现场应用</figcaption></figure>
+              <figure><img src="assets/images/field/team-tea-garden.jpg" alt="实践队在茶园展示队旗与手举牌" /><figcaption>队旗进入实践现场</figcaption></figure>
+              <figure><img src="assets/images/field/team-circle.jpg" alt="实践队员身穿队服在茶园碰拳" /><figcaption>统一队服与团队协作</figcaption></figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="next-page-cta">
+        <p class="eyebrow">FROM DESIGN TO ACTION</p>
+        <h2>视觉之外，<br />还有完整的实践过程。</h2>
+        <a class="button button-primary" href="practice.html">阅读实践纪实 →</a>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 烟台大学 · 茶叙青禾社会实践队</span><a href="index.html">返回首页 →</a></footer>
+  </body>
 </html>

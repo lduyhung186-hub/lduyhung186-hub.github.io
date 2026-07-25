@@ -1,16 +1,405 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1f5d3a">
-  <title>茶叙青禾 · 正在加载</title>
-  <script>window.__TEA_SITE_ENTRY__="practice.html";</script>
-  <script defer src="site-loader.js?v=3"></script>
-</head>
-<body style="margin:0;background:#f7f7f0;color:#214229;font-family:system-ui,-apple-system,'Microsoft YaHei',sans-serif">
-  <main style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem">
-    <div><p style="letter-spacing:.16em;font-size:.78rem;margin:0 0 .8rem">YANTAI UNIVERSITY</p><h1 style="font-size:clamp(2rem,6vw,4.6rem);margin:0">茶叙青禾</h1><p style="color:#5d6b5e">正在进入海青茶乡实践故事…</p></div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="茶叙青禾社会实践队完整实践纪实：海青茶历史、茶文化课堂、乡创助农、茶企深访与科技小院调研。"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b5b38'/%3E%3Cpath d='M19 38c13 1 23-8 27-22 4 15-2 29-18 31-5 1-9-3-9-9Z' fill='%23f3f6eb'/%3E%3Cpath d='M22 42c7-8 13-14 23-23' fill='none' stroke='%239dc333' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <title>实践纪实｜烟台大学 · 茶叙青禾</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="inner-page practice-page">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="index.html#home" aria-label="返回首页">
+        <span class="wordmark-mark">茶</span>
+        <span><b>茶叙青禾</b><small>YANTAI UNIVERSITY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>菜单</span><i aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="index.html">首页</a>
+        <a href="practice.html" aria-current="page">实践纪实</a>
+        <a href="tea-factories.html">三站茶乡</a>
+        <a href="team.html">团队成员</a>
+        <a class="nav-contact" href="design.html">视觉成果</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero story-page-hero" aria-labelledby="page-title">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">FIELD JOURNAL · 2026</p>
+          <h1 id="page-title">从认识产区，<br />到真正参与茶乡行动。</h1>
+          <p>
+            实践按照“产区认知—文化传播—助农行动—企业深访—科技赋能”展开。五篇公众号记录被重新整理为连续路线，而不是五组彼此孤立的活动。
+          </p>
+        </div>
+        <figure class="page-hero-media reveal">
+          <img src="assets/images/field/team-tea-garden.jpg" alt="茶叙青禾队员在海青茶园开展实践" />
+          <figcaption>HAIQING FIELD NOTES / 山东青岛 · 海青镇</figcaption>
+        </figure>
+      </section>
+
+      <nav class="chapter-nav" aria-label="实践纪实章节目录">
+        <a href="#tea-origin"><span>01 / 认知</span>山海茶源</a>
+        <a href="#tea-class"><span>02 / 传播</span>茶香课堂</a>
+        <a href="#rural-revitalization"><span>03 / 行动</span>乡创助农</a>
+        <a href="#huayi-visit"><span>04 / 深访</span>华忆寻茗</a>
+        <a href="#longtaiming-visit"><span>05 / 科技</span>龙泰茗小院</a>
+      </nav>
+
+      <section class="story-chapter" id="tea-origin" aria-labelledby="tea-origin-title">
+        <header class="chapter-header reveal">
+          <span>01 / TEA ORIGIN</span>
+          <div>
+            <p class="eyebrow">一叶山海茶，静待君相逢</p>
+            <h2 id="tea-origin-title">从南方嘉木，<br />到北方山海。</h2>
+            <p class="chapter-deck">溯源“南茶北引”，走进生态茶园，在一芽一叶之间理解海青茶的生长密码。</p>
+          </div>
+        </header>
+
+        <figure class="chapter-cover reveal">
+          <img src="assets/images/stories/origin-tea-garden.jpg" alt="海青茶园层叠的茶垄和正在劳作的茶农" />
+          <figcaption>茶园现场 / 海青镇</figcaption>
+        </figure>
+
+        <div class="story-layout">
+          <aside class="story-sidebar reveal">
+            <dl>
+              <div><dt>主题</dt><dd>历史溯源与采茶实践</dd></div>
+              <div><dt>关键词</dt><dd>南茶北引 / 北纬36° / 一芽一叶</dd></div>
+              <div><dt>原文</dt><dd><a href="https://mp.weixin.qq.com/s/kP07WgcdsvLqtIt-a3A4_g" target="_blank" rel="noreferrer">查看公众号 ↗</a></dd></div>
+            </dl>
+          </aside>
+
+          <article class="article-prose reveal">
+            <p class="article-lead">茶者，南方之嘉木也。曾有定论，北纬30度以北无好茶；但在青岛西海岸的山海之间，海青茶以一场跨越半个多世纪的“北上奔赴”，打破固有桎梏，书写了北方绿茶的传奇篇章。</p>
+            <p>为深耕本土茶文化、探寻茶香底蕴，茶叙青禾实践队走进海青茶乡，踏青山、入茶园、采新茗，以亲身实践触摸一片北方茶叶的生长密码，沉浸式感受山海孕育的独特茶香。</p>
+
+            <h3>溯源时光：一场伟大的“南茶北引”</h3>
+            <p>海青茶，是刻在青岛山海里的文化名片，也是北方茶业突破革新的时代印记。上世纪五六十年代，为破解北方茶叶稀缺的难题，山东启动“南茶北引”工程。1966年，首批优质茶苗落地海青镇后河西村42亩试验田。</p>
+            <p>农技人员和当地种茶人对抗低温、温差、光照等水土难题，让本该生长于江南的嘉木在北方滨海沃土扎根。从试验种植到茶厂投产，从零星茶园到连片茶田，海青茶逐渐成为地方特色产业，也让这片青绿成为乡村振兴的底色。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/origin-field-sign.jpg" alt="海青茶文化展示牌与茶园景观" /><figcaption>茶乡地标</figcaption></figure>
+              <figure><img src="assets/images/stories/origin-fresh-leaves.jpg" alt="刚采摘的海青茶鲜叶" /><figcaption>新采鲜叶</figcaption></figure>
+            </div>
+
+            <h3>山海馈赠：独属于北方好茶的特质</h3>
+            <p>海青位于北纬36°附近，依山近海，光照充足、昼夜温差较大。当地茶人把海青茶概括为叶片厚、香气高、滋味浓、耐冲泡。干茶条索紧实，冲泡后茶汤黄绿清亮，常见熟豆香、板栗香或豌豆鲜香，入口鲜爽醇厚、回甘绵长。</p>
+            <p>这些表现并不只由地理位置决定，茶树品种、采摘时段、芽叶嫩度和加工工艺也会共同塑造一杯茶的最终风味。团队在现场观察鲜叶、品饮茶汤，也由此理解“产地”背后是一整套长期形成的生产经验。</p>
+
+            <figure class="article-wide-image">
+              <img src="assets/images/stories/origin-tea-pour.jpg" alt="热水冲入茶杯，海青茶汤清亮" />
+              <figcaption>一杯茶里，能读到气候、地块和工艺。</figcaption>
+            </figure>
+
+            <h3>青禾躬行：亲手采摘山野新香</h3>
+            <p>纸上得来终觉浅，绝知此事要躬行。队员们走进层层叠叠的茶园，在当地茶农指导下学习“一芽一叶、一芽二叶”的采摘标准：轻捏、快提、轻放，让鲜嫩芽叶完整落入茶篓。</p>
+            <p>从生疏到熟练，从初识茶形到懂得辨茶、采茶，大家在山野劳作中体会茶农的日常，也读懂一杯好茶背后的时光与匠心。阳光照在茶垄和忙碌身影上，一篓篓鲜叶装着山野灵气，也装着青年对本土文化的热忱。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/origin-field-practice.jpg" alt="队员分散在茶垄之间采茶" /><figcaption>走进茶垄</figcaption></figure>
+              <figure><img src="assets/images/stories/origin-hands.jpg" alt="队员们把采到的茶叶聚在手心" /><figcaption>一捧新叶</figcaption></figure>
+            </div>
+
+            <p>未来，团队将继续以青春为炬、以实践为翼，挖掘海青茶文化内涵，传播北方特色茶香，让这片山海青绿在新时代被更多人看见。</p>
+            <footer class="article-credit">文稿排版｜杨百合　摄影｜蒋安琪、任文静　审核｜许小慧</footer>
+          </article>
+        </div>
+        <a class="back-to-index" href="#page-title">返回章节目录 ↑</a>
+      </section>
+
+      <section class="story-chapter story-chapter-tint" id="tea-class" aria-labelledby="tea-class-title">
+        <header class="chapter-header reveal">
+          <span>02 / TEA CLASS</span>
+          <div>
+            <p class="eyebrow">茶香小课堂，听岁月悄悄话</p>
+            <h2 id="tea-class-title">把家乡茶史，<br />讲给孩子们听。</h2>
+            <p class="chapter-deck">以问答、调查和生活场景，让一片海青茶成为孩子们可以理解、分享和传递的家乡记忆。</p>
+          </div>
+        </header>
+
+        <figure class="chapter-cover reveal">
+          <img src="assets/images/stories/class-cover.jpg" alt="茶叙青禾队员与孩子们展示海青茶手举牌" />
+          <figcaption>茶识小课堂 / 青少年文化传播</figcaption>
+        </figure>
+
+        <div class="story-layout">
+          <aside class="story-sidebar reveal">
+            <dl>
+              <div><dt>主题</dt><dd>儿童茶文化课堂</dd></div>
+              <div><dt>形式</dt><dd>讲解 / 问答 / 调查</dd></div>
+              <div><dt>原文</dt><dd><a href="https://mp.weixin.qq.com/s/fcld0IXHBJBB7JOEo5a6oQ" target="_blank" rel="noreferrer">查看公众号 ↗</a></dd></div>
+            </dl>
+          </aside>
+
+          <article class="article-prose reveal">
+            <p class="article-lead">跟着茶香寻古韵。团队把海青茶的历史、外形和味道带进小课堂，邀请孩子们一起听故事、做问答、讲出自己与家乡茶叶的联系。</p>
+
+            <h3>溯源一叶茶香</h3>
+            <p><strong>千里迁茶，落户海青。</strong>上世纪五十年代，山东开启“南茶北引”。工作人员从南方运来茶苗，在青岛海青镇试种。低温、土壤和越冬条件带来许多困难，科研人员与村民反复摸索防冻和养护办法，茶苗终于在北方扎根。</p>
+            <p><strong>不畏艰难，茶苗扎根。</strong>1966年，海青42亩试验茶园种活茶苗；此后，当地逐渐形成稳定种植和加工经验。数十年过去，小小茶苗长成连片茶园，海青也成为具有辨识度的北方茶乡。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/class-teaching.jpg" alt="队员在黑板前为孩子们讲解茶文化" /><figcaption>课堂讲解</figcaption></figure>
+              <figure><img src="assets/images/stories/class-questionnaire.jpg" alt="队员们一起查看茶文化调查问卷" /><figcaption>茶识调查</figcaption></figure>
+            </div>
+
+            <h3>茶味知多少：识茶小问答</h3>
+            <p><strong>题型多样，趣味参与。</strong>课堂设置选择、简答和看图识茶等题型，围绕海青茶历史、外形与口感设计问题，让孩子在轻松互动中建立好奇心。</p>
+            <p><strong>溯源科普，夯实认知。</strong>问卷融入“南茶北引”、茶园发展等基础知识，让零散印象逐渐连成完整的本土茶文化框架。</p>
+            <p><strong>连接生活，主动表达。</strong>问题结合茶园、家庭饮茶等日常场景，引导孩子观察生活里的海青茶，分享自己见过、喝过的茶叶故事。</p>
+
+            <figure class="article-wide-image">
+              <img src="assets/images/stories/class-interview.jpg" alt="实践队员面向参与者开展茶文化访谈" />
+              <figcaption>让茶文化从单向讲解，变成可以回答、讨论和分享的共同话题。</figcaption>
+            </figure>
+
+            <h3>小小茶使者</h3>
+            <p>一片海青茶叶，连着一段跨越南北的拓荒往事，也藏着属于青岛的家乡骄傲。团队希望这堂茶课能在孩子们心里种下一颗热爱本土文化的种子，让今天听到的故事，日后由更多“小小茶使者”慢慢讲、久久传。</p>
+
+            <figure class="article-wide-image compact-image">
+              <img src="assets/images/stories/class-group.jpg" alt="茶文化课堂结束后的团队与参与者合影" />
+              <figcaption>课堂结束，但茶香记忆继续生长。</figcaption>
+            </figure>
+            <footer class="article-credit">文稿排版｜许小慧　摄影｜蒋安琪、任文静　审核｜杨百合</footer>
+          </article>
+        </div>
+        <a class="back-to-index" href="#page-title">返回章节目录 ↑</a>
+      </section>
+
+      <section class="story-chapter" id="rural-revitalization" aria-labelledby="revitalization-title">
+        <header class="chapter-header reveal">
+          <span>03 / RURAL REVITALIZATION</span>
+          <div>
+            <p class="eyebrow">寻海青茶香，悟振兴之道</p>
+            <h2 id="revitalization-title">从一杯茶，<br />看见一条更长的产业链。</h2>
+            <p class="chapter-deck">探访海青上品、三乡人学堂和茶食工坊，用青年视角理解茶产业如何连接文创、电商、研学与乡村创业。</p>
+          </div>
+        </header>
+
+        <figure class="chapter-cover reveal">
+          <img src="assets/images/stories/revitalization-cover.jpg" alt="茶叙青禾实践队在海青上品门前合影" />
+          <figcaption>海青上品 / 产品调研与助农实践</figcaption>
+        </figure>
+
+        <div class="story-layout">
+          <aside class="story-sidebar reveal">
+            <dl>
+              <div><dt>主题</dt><dd>乡创学习与产业延展</dd></div>
+              <div><dt>路线</dt><dd>海青上品 / 三乡人学堂 / 面食工坊</dd></div>
+              <div><dt>原文</dt><dd><a href="https://mp.weixin.qq.com/s/Ka925ofFhEVsBF-FTtgbVA" target="_blank" rel="noreferrer">查看公众号 ↗</a></dd></div>
+            </dl>
+          </aside>
+
+          <article class="article-prose reveal">
+            <p class="article-lead">当夏日蝉鸣撞上茶山青翠，团队走进海青镇，在产品展厅、直播间、乡创学堂和面食工坊之间寻找答案：一片茶叶，怎样从田间走向更丰富的生活场景？</p>
+
+            <h3>探访茶品：看见原叶之外的可能</h3>
+            <p>在海青上品茶文化空间，货架上不只有原叶绿茶。罐装茶、抹茶茶食、茶具、礼盒与IP周边，把生长在山海田间的茶叶延伸成可食、可用、可收藏的日常产品。队员们观察包装、品类和陈列方式，记录本土农产品品牌化的具体细节。</p>
+            <p>从单一茶叶售卖，到茶食、文创和茶具的组合开发，海青茶的变化让团队看见乡村特色产业升级的另一种可能：不只增加产品数量，更要让不同产品共同讲清产地与文化。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/revitalization-store.jpg" alt="队员在海青上品展厅观察茶产品" /><figcaption>展厅调研</figcaption></figure>
+              <figure><img src="assets/images/stories/revitalization-products.jpg" alt="海青上品展厅内丰富的茶产品和礼盒" /><figcaption>茶品与文创</figcaption></figure>
+            </div>
+
+            <h3>青年助农：从参观者成为传播者</h3>
+            <p>团队把所见所学带进直播间，以青年熟悉的新媒体方式介绍海青茶产品和产地故事。从参观者到传播者，镜头连接起田间好物与城市消费者，也让队员们真实体会内容、信任和销售之间的关系。</p>
+
+            <figure class="article-wide-image">
+              <img src="assets/images/stories/revitalization-livestream.jpg" alt="茶叙青禾实践队在海青上品直播间开展助农直播" />
+              <figcaption>用青年流量，为本土好茶增加一次被看见的机会。</figcaption>
+            </figure>
+
+            <h3>三乡人学堂：原乡守根、归乡兴业、新乡创新</h3>
+            <p>在海青乡创“三乡人”学堂，团队学习以茶产业为核心、联动文创、电商和文旅的乡村发展思路。“原乡人”生于海青、守于茶园，以长期种植和制茶经验筑牢根基；“归乡人”带着在外积累的经验返乡创办茶企、合作社和生态茶园；“新乡人”则以电商直播、抹茶深加工和新产品研发，为传统产业打开新的消费入口。</p>
+            <p>三类人并不是彼此替代，而是共同形成乡村产业的连续性：有人守住品质，有人搭建组织，有人连接市场。茶叙青禾正在实践的，也正是用青年视角和新媒体能力，让老茶香适配当代传播。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/revitalization-school-team.jpg" alt="实践队在三乡人学堂门前合影" /><figcaption>三乡人学堂</figcaption></figure>
+              <figure><img src="assets/images/stories/revitalization-exhibition.jpg" alt="队员参观三乡人事迹展板" /><figcaption>乡创人物记录</figcaption></figure>
+            </div>
+
+            <h3>一叶融馍：乡味新生</h3>
+            <p>团队走进中式面食工坊，观察海青抹茶小馒头与茶味花饽饽的制作。师傅将本土抹茶揉进胶东面团，经揉制、塑形和蒸制，让杯中的茶香进入餐桌。这样的跨界不是简单添加颜色，而是为茶叶寻找更亲近、更高频的消费场景。</p>
+            <p>从展厅产品到直播助农，从乡创人物到茶味面点，团队记录工艺与故事，也为后续传播积累真实素材。乡村振兴的“产业兴旺”，正是在这些具体而细小的连接中逐渐发生。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/revitalization-crafts.jpg" alt="海青乡创空间中的文创产品" /><figcaption>乡创产品</figcaption></figure>
+              <figure><img src="assets/images/stories/revitalization-buns.jpg" alt="队员参观海青抹茶面食制作" /><figcaption>抹茶面食</figcaption></figure>
+            </div>
+
+            <p>这次“三下乡”让课堂知识转化为服务社会、理解基层的实际能力，也让队员们更加清楚：青年助农不是代替乡村发声，而是先理解真实产业，再用自己的专业能力帮助它被准确表达。</p>
+            <footer class="article-credit">文稿排版｜任文静　图片｜蒋安琪、王玉淼、任文静　审核｜许小慧、池岸青</footer>
+          </article>
+        </div>
+        <a class="back-to-index" href="#page-title">返回章节目录 ↑</a>
+      </section>
+
+      <section class="story-chapter story-chapter-tint" id="huayi-visit" aria-labelledby="huayi-title">
+        <header class="chapter-header reveal">
+          <span>04 / HUAYI TEA</span>
+          <div>
+            <p class="eyebrow">一叶承华忆，青禾访茗乡</p>
+            <h2 id="huayi-title">把返乡初心，<br />种进一片生态茶园。</h2>
+            <p class="chapter-deck">与烟大校友、返乡创业者面对面，理解生态管理、标准化制茶和品牌创新如何共同支撑一杯茶。</p>
+          </div>
+        </header>
+
+        <figure class="chapter-cover reveal">
+          <img src="assets/images/stories/huayi-cover.jpg" alt="茶叙青禾实践队在华忆茶业门前合影" />
+          <figcaption>华忆茶业 / 校友返乡创业走访</figcaption>
+        </figure>
+
+        <div class="story-layout">
+          <aside class="story-sidebar reveal">
+            <dl>
+              <div><dt>主题</dt><dd>生态种植与返乡创业</dd></div>
+              <div><dt>关键词</dt><dd>293亩 / 虫咬茶 / 8个采制标准</dd></div>
+              <div><dt>原文</dt><dd><a href="https://mp.weixin.qq.com/s/69ikYgJIeZ2zgWtpWSSWDw" target="_blank" rel="noreferrer">查看公众号 ↗</a></dd></div>
+            </dl>
+          </aside>
+
+          <article class="article-prose reveal">
+            <p class="article-lead">黄海之滨，茗香绵延。依托“南茶北引”，海青茶在北方沃土扎根。茶叙青禾走进华忆茶业，与返乡创业者交流，在历史、生态与经营之间寻找传统产业更新的路径。</p>
+
+            <h3>溯源：从南茶北引到青年返乡</h3>
+            <p>1966年前后，较大规模的南方茶苗在海青落地。老一辈种茶人不断解决水土、气候与越冬难题，让南方嘉木在黄海之滨生长。今天，青岛海青华忆茶业由烟台大学校友李桂村返乡创立，据受访方介绍，企业以约293亩茶园为基础，接续当地种茶与制茶传统。</p>
+            <p>“华忆”二字承载着对本土茶文化和开拓历史的记忆。对团队而言，这次走访不仅是了解一家企业，更是在一位校友的返乡选择中，看见青年如何把设计、经营和现代技术带回乡土。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/huayi-factory.jpg" alt="华忆茶业厂区建筑" /><figcaption>华忆茶业</figcaption></figure>
+              <figure><img src="assets/images/stories/huayi-aerial-garden.jpg" alt="华忆茶园与周边山水的航拍景观" /><figcaption>生态茶园</figcaption></figure>
+            </div>
+
+            <h3>山海禀赋与生态平衡</h3>
+            <p>海青茶园位于北纬36°附近，依山近海，昼夜温差较大。较慢的生长节律让芽叶更肥厚，也为鲜爽、回甘和耐泡提供自然基础。华忆在茶园中减少化学投入、保留果树和草本，为瓢虫、蜘蛛、鸟类和土壤生物留下空间。</p>
+            <p>“虫咬茶”并不是人为放虫，也不是额外的一道神秘工艺。它表达的是茶园允许自然生态存在，部分叶片可能留下取食痕迹。经历早期虫害压力后，益虫与害虫逐步形成相对平衡；企业愿意牺牲部分产量，换取更透明的茶园管理方式。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/huayi-winter-garden.jpg" alt="冬季覆雪的华忆茶园" /><figcaption>北方越冬</figcaption></figure>
+              <figure><img src="assets/images/stories/huayi-tea-leaves.jpg" alt="华忆茶业制作完成的茶叶" /><figcaption>芽叶与成茶</figcaption></figure>
+            </div>
+
+            <h3>匠心创新：分时采制与数字连接</h3>
+            <p>据受访方介绍，华忆把春季开采到秋季结束划分为8个采制标准，依据时间、芽叶嫩度和产品方向安排绿茶、红茶等不同制作。机械制茶的核心不是自动按键，而是“人判断、机器执行、数据复盘”：制茶人先识别原料状态，再调整温度、时间、投叶量和压力。</p>
+            <p>品牌端则通过原创包装、一物一码、线上内容和“云养茶”等尝试，缩短消费者与茶园的距离。生态茶园提供原料基础，分时标准建立产品梯度，参数化加工保持批次稳定，追溯和内容传播再把这些真实做法讲给消费者。</p>
+
+            <figure class="article-wide-image compact-image">
+              <img src="assets/images/stories/huayi-standards.jpg" alt="华忆茶业不同采制阶段和茶叶产品的介绍展板" />
+              <figcaption>不同时间、嫩度与工艺，形成不同产品，而不是只更换一个包装名称。</figcaption>
+            </figure>
+
+            <h3>青禾感悟</h3>
+            <p><strong>坚守初心。</strong>地方产业要走得长远，不能抛弃自己的文化根脉。品牌名、茶园故事和产品标准，最终都要回到真实产地。</p>
+            <p><strong>青年扎根乡土。</strong>返乡不是退回原点，而是把在外学习的专业能力重新放进家乡产业。乡村同样能够成为青年创造价值的舞台。</p>
+            <p><strong>守正也要创新。</strong>保留生态种植与传统制茶经验，不等于拒绝机械、数据和新渠道。真正的创新，是在核心品质不变的前提下更新生产与表达方式。</p>
+            <p><strong>读懂振兴的真实模样。</strong>一片茶叶串联种植、加工、销售、文旅和就业。产业只有形成稳定闭环，才能持续带动一方增收。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/huayi-interview.jpg" alt="华忆茶业负责人向实践队讲解企业发展" /><figcaption>面对面交流</figcaption></figure>
+              <figure><img src="assets/images/stories/huayi-tasting.jpg" alt="实践队在华忆茶业品饮和记录茶叶信息" /><figcaption>品饮与记录</figcaption></figure>
+            </div>
+
+            <p>一片北地茶叶，承载数十年南茶北引的奋斗；一名校友创业者，书写青年返乡的担当。团队将继续整理调研成果，以青年之声讲好江北绿茶故事。</p>
+            <footer class="article-credit">文稿排版｜杨百合　摄影｜蒋安琪　审核｜许小慧</footer>
+          </article>
+        </div>
+        <a class="back-to-index" href="#page-title">返回章节目录 ↑</a>
+      </section>
+
+      <section class="story-chapter" id="longtaiming-visit" aria-labelledby="longtaiming-title">
+        <header class="chapter-header reveal">
+          <span>05 / TEA TECHNOLOGY</span>
+          <div>
+            <p class="eyebrow">深耕海青茶，助跑乡村振兴</p>
+            <h2 id="longtaiming-title">让传统制茶，<br />拥有更稳定的科技支撑。</h2>
+            <p class="chapter-deck">走进龙泰茗海青茶科技小院，从生产设备、科研成果到雨中茶园，观察科技如何进入茶叶种植、加工与传播的每个环节。</p>
+          </div>
+        </header>
+
+        <figure class="chapter-cover reveal">
+          <img src="assets/images/stories/longtaiming-cover.jpg" alt="茶叙青禾实践队在龙泰茗海青茶科技小院合影" />
+          <figcaption>龙泰茗海青茶科技小院 / 2026.07.18</figcaption>
+        </figure>
+
+        <div class="story-layout">
+          <aside class="story-sidebar reveal">
+            <dl>
+              <div><dt>主题</dt><dd>制茶科技与生态茶园</dd></div>
+              <div><dt>路线</dt><dd>科技小院 / 生产车间 / 生态茶园</dd></div>
+              <div><dt>发布</dt><dd>茶叙青禾 · 2026-07-18 13:36</dd></div>
+              <div><dt>原文</dt><dd><a href="https://mp.weixin.qq.com/s/E7Tk7XHneuOZaCA8WUHAGQ" target="_blank" rel="noreferrer">查看公众号 ↗</a></dd></div>
+            </dl>
+          </aside>
+
+          <article class="article-prose reveal">
+            <p class="article-lead">茶香藏科技，青禾赴茶山。团队走进龙泰茗海青茶科技小院，把生产车间与生态茶园当作课堂，了解一片鲜叶如何在科研、设备与制茶经验的共同作用下，转化为稳定而有辨识度的海青茶。</p>
+
+            <h3>走进科技小院：把研究落到茶园与车间</h3>
+            <p>科技小院连接科研人员、茶企与种植一线。现场展板集中呈现基地规划、合作资质、良种培育与阶段性成果，负责人则结合真实生产流程讲解技术如何服务茶树管理和产品开发。对团队而言，这里不是只陈列成果的展厅，更是一处把问题带回田间、再把答案送进生产的实践平台。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/longtaiming-exhibition.jpg" alt="实践队参观龙泰茗科技小院成果展板" /><figcaption>成果展示与调研</figcaption></figure>
+              <figure><img src="assets/images/stories/longtaiming-research.jpg" alt="负责人向实践队讲解海青茶科技小院研究成果" /><figcaption>科研成果讲解</figcaption></figure>
+            </div>
+
+            <h3>现代设备：稳定每一道加工环节</h3>
+            <p>在加工车间，团队近距离观察鲜叶处理、杀青、揉捻、理条与干燥等设备。现代化并不意味着机器取代茶人，而是把温度、时间、投叶量等关键变量变得更可控。制茶人依据鲜叶状态作出判断，再借助设备稳定执行，既保留经验，也提高批次之间的稳定性。</p>
+            <p>标准化加工让海青茶更容易形成稳定品质，也为后续产品分级、质量追溯和品牌传播提供基础。传统工艺与机械设备不是二选一：前者提供对茶性的理解，后者帮助经验被记录、复现和持续优化。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/longtaiming-equipment.jpg" alt="负责人向实践队介绍制茶设备" /><figcaption>设备原理讲解</figcaption></figure>
+              <figure><img src="assets/images/stories/longtaiming-workshop.jpg" alt="实践队在龙泰茗加工车间观察制茶机械" /><figcaption>生产车间观察</figcaption></figure>
+            </div>
+
+            <h3>科研融合：良种、工艺与产业共同更新</h3>
+            <p>良种培育解决的是“什么茶树更适应北方环境”，加工研究回答的是“怎样把原料优势转化为产品品质”。科技小院把品种、栽培、加工和市场需求放在同一条链上研究，使科研不止停在论文和展板上，也能进入茶园管理与企业生产。</p>
+            <p>这种融合让团队看见乡村产业升级的真实路径：尊重地方长期积累的种茶、制茶经验，同时以数据、设备和协作机制提升效率。科技不是抹去传统，而是帮助传统在新的生产条件下继续生长。</p>
+
+            <figure class="article-wide-image">
+              <img src="assets/images/stories/longtaiming-garden-research.jpg" alt="实践队在雨中调研龙泰茗生态茶园" />
+              <figcaption>雨中入园，现场了解茶树生长、灌溉与田间管理。</figcaption>
+            </figure>
+
+            <h3>从生态茶园到直播助农</h3>
+            <p>雨中的生态茶园让调研回到产业最基础的一端。队员们观察茶垄、灌溉设施和田间管理方式，了解水分、土壤与日常养护如何共同影响芽叶质量。只有读懂原料从哪里来，后续的产品介绍与传播才不会变成空泛口号。</p>
+            <p>团队计划把此次走访整理成更易理解的图文与短视频内容，并结合后续直播助农，用真实产地、生产过程和科研成果支撑表达。青年助农的价值，不只是替产品增加一次曝光，更是把复杂的产业信息翻译成公众愿意看、能够信的内容。</p>
+
+            <div class="article-gallery gallery-pair">
+              <figure><img src="assets/images/stories/longtaiming-garden.jpg" alt="雨中的龙泰茗生态茶园与田间设施" /><figcaption>生态茶园</figcaption></figure>
+              <figure><img src="assets/images/stories/longtaiming-tea-leaves.jpg" alt="龙泰茗茶园中生长的海青茶叶" /><figcaption>雨后茶叶</figcaption></figure>
+            </div>
+
+            <p>从科技小院到加工车间，再到雨中茶园，团队看到的是一条彼此衔接的产业路线：科研回应生产难题，设备稳定加工品质，生态管理守住原料基础，青年传播再帮助好茶走向更广的市场。</p>
+            <footer class="article-credit">来源｜茶叙青禾　排版｜任文静　图片｜蒋安琪、王玉淼、任文静　文字｜任文静　审核｜许小慧、池岸青</footer>
+          </article>
+        </div>
+        <a class="back-to-index" href="#page-title">返回章节目录 ↑</a>
+      </section>
+
+      <section class="next-page-cta">
+        <p class="eyebrow">CONTINUE THE FIELD ROUTE</p>
+        <h2>五篇纪实之后，<br />继续走进三站茶乡。</h2>
+        <a class="button button-primary" href="tea-factories.html">查看茶企与实践点 →</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 茶叙青禾社会实践队</span>
+      <a href="index.html">返回首页 →</a>
+    </footer>
+  </body>
 </html>

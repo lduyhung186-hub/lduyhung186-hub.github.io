@@ -1,16 +1,140 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1f5d3a">
-  <title>茶叙青禾 · 正在加载</title>
-  <script>window.__TEA_SITE_ENTRY__="index.html";</script>
-  <script defer src="site-loader.js?v=3"></script>
-</head>
-<body style="margin:0;background:#f7f7f0;color:#214229;font-family:system-ui,-apple-system,'Microsoft YaHei',sans-serif">
-  <main style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem">
-    <div><p style="letter-spacing:.16em;font-size:.78rem;margin:0 0 .8rem">YANTAI UNIVERSITY</p><h1 style="font-size:clamp(2rem,6vw,4.6rem);margin:0">茶叙青禾</h1><p style="color:#5d6b5e">正在进入海青茶乡实践故事…</p></div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="烟台大学茶叙青禾社会实践队——走进海青茶乡，记录青年实践与乡村品牌传播。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b5b38'/%3E%3Cpath d='M19 38c13 1 23-8 27-22 4 15-2 29-18 31-5 1-9-3-9-9Z' fill='%23f3f6eb'/%3E%3Cpath d='M22 42c7-8 13-14 23-23' fill='none' stroke='%239dc333' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <title>烟台大学 · 茶叙青禾社会实践队</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="portal-page">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="index.html" aria-label="返回首页">
+        <span class="wordmark-mark">茶</span>
+        <span><b>茶叙青禾</b><small>YANTAI UNIVERSITY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>菜单</span><i aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="practice.html">实践纪实</a>
+        <a href="tea-factories.html">三站茶乡</a>
+        <a href="team.html">团队成员</a>
+        <a class="nav-contact" href="design.html">视觉成果</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">YANTAI UNIVERSITY · FIELD NOTES 2026</p>
+          <h1 class="hero-title reveal" id="hero-title">
+            <span class="school">烟台大学</span>
+            <span class="project-name">茶叙青禾</span>
+            <span class="team-name">社会实践队</span>
+          </h1>
+          <p class="hero-lead reveal">以青春脚步走进茶乡，<br />以实践力量讲好海青茶故事。</p>
+          <p class="hero-summary reveal">聚焦海青茶文化传播、乡村品牌助力与青年社会实践，记录一次从茶园出发的真实行动。</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="practice.html">进入实践纪实</a>
+            <a class="button button-text" href="#explore">浏览项目入口 <span aria-hidden="true">↓</span></a>
+          </div>
+          <dl class="hero-facts reveal">
+            <div><dt>所属院校</dt><dd>烟台大学</dd></div>
+            <div><dt>实践地点</dt><dd>青岛 · 海青镇</dd></div>
+            <div><dt>行动方向</dt><dd>文化传播 / 青年助农</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" data-carousel aria-label="首页视觉轮播">
+          <div class="carousel-stage">
+            <figure class="hero-slide is-active" data-slide aria-hidden="false">
+              <img src="assets/images/ip-hero.jpg" alt="海青茶韵IP形象完整视觉海报" />
+              <figcaption><span>01 / BRAND CHARACTER</span><strong>海青茶韵 · IP形象</strong></figcaption>
+            </figure>
+            <figure class="hero-slide" data-slide aria-hidden="true">
+              <img class="photo-cover team-hero-photo" src="assets/images/field/team-hero.jpg" alt="茶叙青禾社会实践队在海青品茗园牌坊下合影" />
+              <figcaption><span>02 / YOUTH FIELD NOTES</span><strong>烟台大学 · 茶叙青禾社会实践队</strong></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <p aria-live="polite" data-slide-status>01 — IP形象</p>
+            <div class="carousel-dots" role="group" aria-label="选择轮播画面">
+              <button class="is-active" type="button" data-slide-to="0" aria-label="显示IP形象"></button>
+              <button type="button" data-slide-to="1" aria-label="显示团队合影"></button>
+            </div>
+            <div class="carousel-arrows">
+              <button type="button" data-carousel-prev aria-label="上一张">←</button>
+              <button type="button" data-carousel-next aria-label="下一张">→</button>
+            </div>
+          </div>
+          <p class="asset-note">轮播顺序：IP形象 → 团队实践合影。</p>
+        </div>
+      </section>
+
+      <div class="theme-rail" aria-label="实践关键词">
+        <span>产业调研</span><i></i><span>文化挖掘</span><i></i><span>青年助农</span><i></i><span>品牌传播</span>
+      </div>
+
+      <section class="portal-overview" id="explore" aria-labelledby="explore-title">
+        <header class="portal-heading reveal">
+          <div>
+            <p class="eyebrow">PROJECT DIRECTORY</p>
+            <h2 id="explore-title">从一个入口，<br />进入四组真实记录。</h2>
+          </div>
+          <p>首页只负责说明项目与引导浏览。团队、实践、茶乡和视觉成果分别进入独立页面，避免所有信息堆在同一条长页面里。</p>
+        </header>
+
+        <div class="action-route reveal" aria-label="项目行动逻辑">
+          <div><span>01 / 出发</span><strong>认识海青茶</strong><p>从地方历史和产业现状中提出问题。</p></div>
+          <div><span>02 / 调研</span><strong>走进真实现场</strong><p>访茶园、看工艺、听企业与村庄讲述。</p></div>
+          <div><span>03 / 行动</span><strong>把专业带进乡村</strong><p>开展茶课、传播、记录与设计实践。</p></div>
+          <div><span>04 / 转化</span><strong>形成青年表达</strong><p>沉淀纪实、IP、文创与调研成果。</p></div>
+        </div>
+
+        <div class="portal-grid">
+          <a class="portal-card portal-card-team reveal" href="team.html">
+            <img src="assets/images/field/team-circle.jpg" alt="队员在茶园中围成圆圈碰拳" />
+            <span class="portal-number">01</span>
+            <div><p>THE TEAM</p><h3>团队成员</h3><span>查看11位成员与各自分工 →</span></div>
+          </a>
+          <a class="portal-card portal-card-practice reveal" href="practice.html">
+            <img src="assets/images/field/team-tea-garden.jpg" alt="实践队在海青茶园开展现场记录" />
+            <span class="portal-number">02</span>
+            <div><p>FIELD JOURNAL</p><h3>实践纪实</h3><span>按行动顺序阅读四篇纪实 →</span></div>
+          </a>
+          <a class="portal-card portal-card-sites reveal" href="tea-factories.html">
+            <img src="assets/images/factories/huayi-garden.jpg" alt="海青茶园与茶企实践现场" />
+            <span class="portal-number">03</span>
+            <div><p>THREE FIELD SITES</p><h3>三站茶乡</h3><span>进入三处实践点的深度介绍 →</span></div>
+          </a>
+          <a class="portal-card portal-card-design reveal" href="design.html">
+            <img src="assets/images/ip-character.jpg" alt="海青茶韵IP角色与视觉设计" />
+            <span class="portal-number">04</span>
+            <div><p>VISUAL ARCHIVE</p><h3>视觉成果</h3><span>切换查看IP、队伍识别与文创 →</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="portal-closing" aria-labelledby="closing-title">
+        <figure class="reveal"><img src="assets/images/field/team-lineup.jpg" alt="茶叙青禾社会实践队在海青茶园合影" /></figure>
+        <div class="reveal">
+          <p class="eyebrow">A YOUTH FIELD PROJECT</p>
+          <h2 id="closing-title">不是一次旁观，<br />而是一段共同完成的实践。</h2>
+          <p>我们用调研理解产业，用影像保存现场，也用设计让海青茶被更多年轻人认识。每一条分支，都是这次行动留下的真实记录。</p>
+          <a class="button button-primary" href="team.html">认识这支队伍 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 烟台大学 · 茶叙青禾社会实践队</span>
+      <a href="#home">回到顶部 ↑</a>
+    </footer>
+  </body>
 </html>
