@@ -37,14 +37,14 @@ jobs:
           with ZipFile("site.zip") as archive:
               for item in archive.infolist():
                   name = item.filename.replace("\\", "/")
-                  if not name or name.endswith("/"):
+                  if not name or name.endswith("/") or name.startswith(".github/"):
                       continue
                   target = Path(name)
                   target.parent.mkdir(parents=True, exist_ok=True)
                   target.write_bytes(archive.read(item))
           PY
           rm -rf .upload-parts
-          rm -f site.zip .github/workflows/bootstrap-site.yml
+          rm -f site.zip site-loader.js .github/workflows/bootstrap-site.yml
 
       - name: Save restored website
         shell: bash
